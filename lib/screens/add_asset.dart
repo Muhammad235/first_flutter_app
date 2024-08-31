@@ -16,8 +16,11 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.amberAccent.shade100,
             ),
             body: const Center(
-              child: Image(image: AssetImage('images/ss.png'),
-              )
+              // child: Image(image: AssetImage('images/ss.png'),
+               child: Image(image: NetworkImage("https://buyjet.ng/assets/images/buy.png"),
+                width: 200,
+              ),
+              // child: Image.asset('images/ss.png')
             )
         )
     );
