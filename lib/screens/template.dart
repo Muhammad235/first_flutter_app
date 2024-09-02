@@ -7,12 +7,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: "Flutter App",
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-          body: (Text('text'))
-      ),
+    return MaterialApp(
+        title: "Flutter App",
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.black.withOpacity(0.9),
+            title: const Text(
+              "Title",
+              style: TextStyle(color: Colors.white),
+            ),
+            centerTitle: true,
+          ),
+          body: const Text("hello"),
+        )
     );
   }
 }
+

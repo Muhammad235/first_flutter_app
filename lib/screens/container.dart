@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
                 offset: Offset(4, 4))
           ],
           image: const DecorationImage(image: AssetImage('images/ss--.png')),
+
         ),
         child: const Text(
           "APP",
