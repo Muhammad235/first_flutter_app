@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="flaoting action btn" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/lib/screens/floating_action_button.dart" />
+    <method v="2" />
+  </configuration>
+</component>
