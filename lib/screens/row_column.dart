@@ -23,23 +23,23 @@ class MyApp extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Expanded(
-                    child: Image(
-                      image: AssetImage('images/ss--.png'),
-                      width: 150,
-                    ),
-                  ),
+                  // Expanded(
+                  //   child: Image(
+                  //     image: AssetImage('images/ss--.png'),
+                  //     width: 150,
+                  //   ),
+                  // ),
                   Expanded(
                       flex: 2,
                       child: Image(
                         image: AssetImage('images/ss--.png'),
-                        width: 150,
+                        width: 50,
                       )),
-                  Expanded(
-                      child: Image(
-                    image: AssetImage('images/ss--.png'),
-                    width: 150,
-                  ))
+                  // Expanded(
+                  //     child: Image(
+                  //   image: AssetImage('images/ss--.png'),
+                  //   width: 150,
+                  // ))
                 ],
               ),
               Row(
