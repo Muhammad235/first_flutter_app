@@ -1,4 +1,4 @@
 
 import 'package:flutter/material.dart';
 
-// const  purpleMain = Color(Colors.#4933D0);
+const primary = Color(0xFF4933D0);

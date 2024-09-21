@@ -1,4 +1,6 @@
+import 'package:first_flutter_app/0_nexio_app/onboarding/widgets/onboarding_button.dart';
 import 'package:flutter/material.dart';
+import 'package:first_flutter_app/0_nexio_app/constant/colors.dart';
 
 class Onboarding1 extends StatelessWidget {
   const Onboarding1({super.key});
@@ -9,6 +11,7 @@ class Onboarding1 extends StatelessWidget {
       title: "Flutter App",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.white,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -17,11 +20,11 @@ class Onboarding1 extends StatelessWidget {
                 Image.asset(
                   "images/frame.png",
                   width: double.infinity, //full width
-                  height: 500,
+                  height: 450,
                   fit: BoxFit.cover, // Ensures it covers the full width
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 25.0, top: 100),
+                  padding: const EdgeInsets.only(left: 25.0, top: 60),
                   child: Image.asset(
                     "images/card1.png",
                     width: 300,
@@ -29,7 +32,7 @@ class Onboarding1 extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 85.0, top: 150),
+                  padding: const EdgeInsets.only(left: 85.0, top: 110),
                   child: Image.asset(
                     "images/card2.png",
                     width: 300,
@@ -37,7 +40,7 @@ class Onboarding1 extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 175.0, top: 220),
+                  padding: const EdgeInsets.only(left: 175.0, top: 180),
                   child: Image.asset(
                     "images/card3.png",
                     width: 300,
@@ -48,32 +51,33 @@ class Onboarding1 extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.only(left: 30.7, bottom: 50),
-              child: Column(
+              child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Ready to take",
                       style: TextStyle(
                         fontSize: 54.0,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
-                    const Text(
+                    Text(
                       "your money beyond",
                       style: TextStyle(
                           fontSize: 54.0,
-                          color: Colors.deepPurple,
+                          color: primary,
                           fontWeight: FontWeight.w400,
                           height: 0.999),
                     ),
                     // const SizedBox(height: 0),
-                    const Row(
+                    Row(
                       children: [
                         Text(
                           "borders",
                           style: TextStyle(
                               fontSize: 54.0,
-                              color: Colors.deepPurple,
+                              color: primary,
                               fontWeight: FontWeight.w400),
                         ),
                         Text(
@@ -84,25 +88,10 @@ class Onboarding1 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 15),
-                    ElevatedButton.icon(
-                      onPressed: () {},
-                      label: const Text("Get Started"),
-                      style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.all(0),
-                        backgroundColor:
-                            Colors.black, // Button background color
-                        fixedSize: const Size(400, 75), // Button size
-                        textStyle: const TextStyle(
-                          fontSize: 25,
-                          // fontWeight: FontWeight.bold,
-                        ),
-                        foregroundColor: Colors.white, // Text color
-                        alignment: Alignment.center,
-                      ),
-                    ),
-                    const SizedBox(height: 22.5),
-                    const Row(
+                    SizedBox(height: 14),
+                    OnboardingButton(buttonColor: Colors.black, buttonTitle: "Get Started",),
+                    SizedBox(height: 15.5),
+                    Row(
                       // padding: EdgeInsets.only(top: 10.7),
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -112,10 +101,10 @@ class Onboarding1 extends StatelessWidget {
                         Text("Sign me in",
                             style: TextStyle(
                                 fontSize: 18,
-                                color: Colors.deepPurple,
+                                color: primary,
                                 fontWeight: FontWeight.w500)),
                       ],
-                    )
+                    ),
                   ]),
             )
           ],
