@@ -2,6 +2,8 @@ import 'package:first_flutter_app/0_nexio_app/onboarding/widgets/onboarding_butt
 import 'package:flutter/material.dart';
 import 'package:first_flutter_app/0_nexio_app/constant/colors.dart';
 
+import 'onboarding2.dart';
+
 class Onboarding1 extends StatelessWidget {
   const Onboarding1({super.key});
 
@@ -89,7 +91,7 @@ class Onboarding1 extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 14),
-                    OnboardingButton(buttonColor: Colors.black, buttonTitle: "Get Started",),
+                    OnboardingButton(page: Onboarding2(), buttonColor: Colors.black, buttonTitle: "Get Started",),
                     SizedBox(height: 15.5),
                     Row(
                       // padding: EdgeInsets.only(top: 10.7),

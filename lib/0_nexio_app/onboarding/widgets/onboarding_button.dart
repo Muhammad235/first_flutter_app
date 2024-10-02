@@ -5,19 +5,21 @@ import 'package:first_flutter_app/0_nexio_app/constant/colors.dart';
 class OnboardingButton extends StatelessWidget {
   final Color? buttonColor;
   final String buttonTitle;
+  final Widget page;
 
-  const OnboardingButton(
-      {super.key,
+  const OnboardingButton({
+      super.key,
       this.buttonColor = primary,
-      this.buttonTitle = "Next"
-      });
+      this.buttonTitle = "Next",
+      required this.page,
+  });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton.icon(
       onPressed: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return const Onboarding2();
+          return page;
         }));
       },
       label: Text(buttonTitle),

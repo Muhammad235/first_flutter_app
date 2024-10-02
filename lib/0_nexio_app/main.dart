@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:first_flutter_app/0_nexio_app/onboarding/onboarding1.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:first_flutter_app/0_nexio_app/constant/colors.dart';
 void main() => runApp(const MyApp());
 

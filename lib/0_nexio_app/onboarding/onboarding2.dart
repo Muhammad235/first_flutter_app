@@ -2,6 +2,8 @@ import 'package:first_flutter_app/0_nexio_app/onboarding/widgets/onboarding_butt
 import 'package:flutter/material.dart';
 import 'package:first_flutter_app/0_nexio_app/constant/colors.dart';
 
+import '../auth/signup.dart';
+
 class Onboarding2 extends StatelessWidget {
   const Onboarding2({super.key});
 
@@ -50,7 +52,7 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 40),
-                  OnboardingButton(), // Ensure OnboardingButton is imported and correct
+                  OnboardingButton(page: SignupScreen(),), // Ensure OnboardingButton is imported and correct
                   SizedBox(height: 15.5),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
